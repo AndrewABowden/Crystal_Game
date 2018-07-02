@@ -21,29 +21,62 @@ body {
     border-radius: 4px;
     box-shadow: 5px 5px 5px rgba(18, 0, 41, 0.5);
     transition: box-shadow 1s;
+    animation: bounceIn 1.5s;
+      
 }
 .crystal:hover{
     box-shadow: 15px 15px 15px rgba(0, 0 , 0, 0.5);
     cursor: pointer;
     transition: box-shadow 1s;
 }
-
-.crystal:display {
-
-}
-
 img {
     width: 50px;
 }
 .text-center {
     color:white;
     font-family: 'Special Elite', cursive;
-    background: black;
+    background: black
 }
 .game-container {
-    width: 1024px;
+    width: 1224px;
     padding-left: 30px;
+
 }
 .description {
     color: black;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
+.container {
+    border: 2px solid black;
+    height: 600px;
+    box-shadow: 15px 15px 15px 15px rgba(0, 0 , 0, 0.5);
+}
+
+/* Crystal Bounce Animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Slide in frames */
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

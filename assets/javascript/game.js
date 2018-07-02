@@ -4,7 +4,6 @@ var lost = 0;
 var win= 0;
 var previous = 0;
 
-//Setters
 
 //Getters -- gets our class value,
 //$(".crystal").attr('class');
@@ -22,7 +21,7 @@ var resetGame = function () {
 
 
     random_result = Math.floor(Math.random() * 69 ) + 30 //hoisting keeps our results under 100
-
+code
     //Visibility of Random Result: 
     $("#result").html('Random Result: ' + random_result);
 
@@ -35,12 +34,16 @@ var resetGame = function () {
         crystal.attr({
             "class": 'crystal', //setting a value for class crystal, that is data-random
             "data-random": random//this is how you set the attribute
+            //animate up and fade out. then remove element. change value
         });
         crystal.css({
             "background-image":"url('"+ (images[i]) + "')",
             "background-size":"cover"
         });
-//  crystal.html(random); //shows crystal number in element
+ // crystal.html(random); //shows crystal number in element
+    
+            
+
 
         $(".crystals").append(crystal);
 
