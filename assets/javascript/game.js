@@ -21,7 +21,7 @@ var resetGame = function () {
 
 
     random_result = Math.floor(Math.random() * 69 ) + 30 //hoisting keeps our results under 100
-code
+
     //Visibility of Random Result: 
     $("#result").html('Random Result: ' + random_result);
 

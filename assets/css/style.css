@@ -21,7 +21,7 @@ body {
     border-radius: 4px;
     box-shadow: 5px 5px 5px rgba(18, 0, 41, 0.5);
     transition: box-shadow 1s;
-    animation: bounceIn 1.5s;
+    animation: bounceIn 2s;
       
 }
 .crystal:hover{
@@ -35,7 +35,7 @@ img {
 .text-center {
     color:white;
     font-family: 'Special Elite', cursive;
-    background: black
+    background: black;
 }
 .game-container {
     width: 1224px;
@@ -44,8 +44,6 @@ img {
 }
 .description {
     color: black;
-    animation-duration: 2s;
-    animation-name: slidein;
 }
 .container {
     border: 2px solid black;
@@ -53,30 +51,18 @@ img {
     box-shadow: 15px 15px 15px 15px rgba(0, 0 , 0, 0.5);
 }
 
-/* Crystal Bounce Animation */
+/* Header Animation */
 @keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  75% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-/* Slide in frames */
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%; 
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
     }
   }
+  
