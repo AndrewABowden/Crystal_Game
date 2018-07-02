@@ -1,0 +1,49 @@
+body {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrVe6p-wsd1WVgqZk33iXe-6frxl-W40Zh8EZQnVc4yFxZp3vsw");
+}
+.crystals  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+* {
+    color:black;
+    font-size: 22px;
+    font-family: 'Righteous', cursive;
+}
+.crystal {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(18, 0, 41, 0.5);
+    transition: box-shadow 1s;
+}
+.crystal:hover{
+    box-shadow: 15px 15px 15px rgba(0, 0 , 0, 0.5);
+    cursor: pointer;
+    transition: box-shadow 1s;
+}
+
+.crystal:display {
+
+}
+
+img {
+    width: 50px;
+}
+.text-center {
+    color:white;
+    font-family: 'Special Elite', cursive;
+    background: black;
+}
+.game-container {
+    width: 1024px;
+    padding-left: 30px;
+}
+.description {
+    color: black;
+}
